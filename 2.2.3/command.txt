@@ -1,0 +1,1 @@
+emcc closure.cc --js-library closure_pkg.js -o closure.js
