@@ -5,6 +5,13 @@
         <title>Emscripten: 你好，世界！</title>
     </head>
     <body>
+        <script>
+            Module = {};
+            Module.onRuntimeInitialized = function() {
+                // do sth.
+                Module._main();
+            }
+        </script>
         <script src="hello.js"></script>
     </body>
 </html>
